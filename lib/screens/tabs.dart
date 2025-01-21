@@ -41,8 +41,8 @@ class _TabsScreenState extends State<TabsScreen> {
     if (isExisting) {
       setState(() {
         _favoriteMeals.remove(meal);
-        _showInfoMessage(context, 'Removed from favorites!');
       });
+      _showInfoMessage(context, 'Removed from favorites!');
     } else {
       setState(() {
         _favoriteMeals.add(meal);
